@@ -3,8 +3,7 @@
             -webkit-font-smoothing: antialiased;
             background-color: #000000;
         }
-        
-        
+
         @keyframes typing {
             from { width: 0 }
             to { width: 100% }
@@ -17,7 +16,6 @@
             animation: typing 2.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
         }
 
-        
         .page-section {
             display: none;
             opacity: 0;
@@ -28,7 +26,6 @@
             opacity: 1;
         }
 
-        
         #hero-canvas-container {
             position: absolute;
             top: 0;
@@ -36,19 +33,18 @@
             width: 100%;
             height: 100%;
             z-index: 0;
-            pointer-events: none; 
+            pointer-events: none;
         }
-        
+
         .hero-content-overlay {
             position: relative;
             z-index: 10;
-            pointer-events: none; 
+            pointer-events: none;
         }
         .hero-content-overlay > * {
             pointer-events: auto;
         }
 
-        
         .text-glow {
             text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
         }
@@ -63,7 +59,6 @@
             transform: translateY(0);
         }
 
-        
         .btn-corporate {
             position: relative;
             overflow: hidden;
@@ -92,7 +87,6 @@
             box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
         }
 
-        
         .data-panel {
             background: rgba(10, 10, 10, 0.8);
             border: 1px solid rgba(255, 255, 255, 0.05);
@@ -102,7 +96,6 @@
             border-color: rgba(255, 255, 255, 0.15);
         }
 
-        
         .scanline-img {
             position: relative;
             overflow: hidden;
@@ -123,8 +116,7 @@
             z-index: 2;
             pointer-events: none;
         }
-        
-        
+
         .bg-grid {
             background-size: 40px 40px;
             background-position: center center;
@@ -135,7 +127,6 @@
             color: #000000;
         }
 
-        
         #world-map-wrap .landmass-dots {
             opacity: 0;
             transition: opacity 1.8s ease;
@@ -184,7 +175,6 @@
             100% { r: var(--rpmax); opacity: 0; stroke: rgba(255,255,255,0); fill: none; }
         }
 
-        
         #grain-overlay {
             position: fixed;
             inset: 0;
@@ -202,7 +192,6 @@
             background: radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,0.55) 100%);
         }
 
-        
         .fade-in-up {
             transform: translateY(34px) scale(0.985);
             transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
@@ -211,7 +200,6 @@
             transform: translateY(0) scale(1);
         }
 
-        
         .data-panel {
             transition: border-color 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
         }
@@ -220,7 +208,6 @@
             box-shadow: 0 20px 60px -20px rgba(255,255,255,0.08), 0 0 0 1px rgba(255,255,255,0.06) inset;
         }
 
-        
         .scanline-img img {
             transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.9s ease, filter 0.9s ease;
             filter: contrast(1.05) brightness(0.95);
@@ -229,13 +216,11 @@
             filter: contrast(1.1) brightness(1.05);
         }
 
-        
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: #000; }
         ::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 0; border: 2px solid #000; }
         ::-webkit-scrollbar-thumb:hover { background: #444; }
 
-        
         .ticker-wrap {
             position: relative;
             display: flex;
@@ -257,14 +242,12 @@
             to { transform: translateX(-100%); }
         }
 
-        
         @media (max-width: 767px), (hover: none) and (pointer: coarse) {
             .bg-fixed {
                 background-attachment: scroll;
             }
         }
 
-        
         @media (max-width: 1023px) {
             .desktop-nav-links {
                 display: none !important;
@@ -276,7 +259,6 @@
             }
         }
 
-        
         #mobile-menu {
             display: none;
         }
